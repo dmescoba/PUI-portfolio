@@ -1,0 +1,42 @@
+.index .card {
+transition: all 0.3s;
+}
+
+.index .card:hover {
+transform: scale(1.05);
+}
+
+html footer i:hover {
+    transform: scale(1.15);
+    }
+
+$primary: #63ABFF;
+
+
+.bg-centible {
+    background-color: #B98FB5;
+}
+
+.bg-bubbly {
+    background-color: #ACC39A;
+}
+
+.bg-inquery {
+    background-color: #ACA7F7;
+}
+
+.bg-cupboard {
+    background-color: #81B2D4;
+}
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+/* Youtube video where I learned how to modify original Bootstrap : https://www.youtube.com/watch?v=cFjWCTk6lXc&t=157s */
+
+.line-drawing {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    stroke-linecap: round; 
+    stroke-linejoin: round; 
+  }
+
+
