@@ -1,21 +1,17 @@
 "use strict";
 
-var _animeEs = _interopRequireDefault(require("../../../node_modules/animejs/lib/anime.es.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
 // Import Anime
+// import anime from '../../node_modules/animejs/lib/anime.es.js';
 // Check if the body element has the ID "index-body"
 if (document.body && document.body.id === "index-body") {
   //////////////// Homepage Hero Animations ////////////////
-  var heroTimeline = _animeEs["default"].timeline({
+  var heroTimeline = anime.timeline({
     duration: 3000
   });
-
   heroTimeline // Name drawing
   .add({
     targets: ".line-drawing",
-    strokeDashoffset: [_animeEs["default"].setDashoffset, 0],
+    strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutSine',
     duration: 10000,
     loop: false
@@ -73,20 +69,20 @@ if (document.body && document.body.id === "about-body") {
   //////////////// About Me Animations ////////////////
   document.addEventListener("DOMContentLoaded", function () {
     // Animate the dots
-    (0, _animeEs["default"])({
+    anime({
       targets: ".timeline-dot",
       opacity: [0, 1],
       translateX: [-50, 0],
-      delay: _animeEs["default"].stagger(500),
+      delay: anime.stagger(500),
       duration: 1000,
       easing: "easeOutBounce"
     }); // Animate the Content
 
-    (0, _animeEs["default"])({
+    anime({
       targets: ".timeline-content",
       opacity: [0, 1],
       translateX: [-50, 0],
-      delay: _animeEs["default"].stagger(500),
+      delay: anime.stagger(500),
       duration: 1000,
       easing: "easeOutBounce"
     });
