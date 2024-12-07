@@ -1,6 +1,6 @@
 // Import Anime
 
-import anime from '../../node_modules/animejs/lib/anime.es.js';
+import anime from '../../../node_modules/animejs/lib/anime.es.js';
 
 // Check if the body element has the ID "index-body"
 if (document.body && document.body.id === "index-body") {
