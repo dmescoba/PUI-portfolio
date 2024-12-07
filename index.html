@@ -24,43 +24,60 @@
 
 <body id="index-body">
 
-  <!-- Start Navbar -->
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top " aria-label="Main Navigation">
-      <div class="container-fluid mx-4">
-        <a class="navbar-brand" href="index.html">
-          <img src="/assets/img/logo-svg.svg" alt="Daniella Escobar's logo in a handwritten font reading 'dani'.">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#projects" aria-current="page">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto d-flex align-items-center">
-            <li class="nav-item">
-              <a class="icon-link nav-link text-center" href="mailto:daniesco0303@gmail.com" aria-label="Email Daniella">
-                Email<i class="bi bi-envelope-fill" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="icon-link nav-link" href="https://www.linkedin.com/in/daniesco/" aria-label="View Daniella's LinkedIn">
-                LinkedIn <i class="bi bi-linkedin" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
+<!-- Start Navbar -->
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Main navigation">
+    <div class="container-fluid mx-4">
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold" href="index.html" aria-label="Homepage">
+        Daniella Escobar
+      </a>
+
+      <!-- Navbar toggler button -->
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navigation menu -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" aria-label="Learn about Daniella">About</a>
+          </li>
+        </ul>
+
+        <!-- Contact buttons -->
+        <div class="hstack gap-3">
+          <a 
+            href="mailto:daniesco0303@gmail.com" 
+            aria-label="Send an email to Daniella" 
+            class="btn btn-outline-primary" 
+            role="button">
+            Email
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/daniesco/" 
+            aria-label="Visit Daniella's LinkedIn profile" 
+            class="btn btn-outline-primary" 
+            role="button">
+            LinkedIn
+          </a>
         </div>
       </div>
-    </nav>
-  </header>
-  <!-- End Navbar -->
+    </div>
+  </nav>
+</header>
 
   <main>
     <!-- Hero Section -->
@@ -92,12 +109,19 @@
           <div id="hero-buttons" class="hstack gap-4 mt-4">
             <a href="about.html" class="btn btn-primary w-100" role="button">About Me</a>
           </div>
-          <!-- <div class="hero-arrow bg-primary d-flex justify-content-center">
-            <i class="bi bi-arrow-down-circle fs-1"></i>
-          </div> -->
         </div>
       </div>
-    </section>
+
+    <!-- Arrow -->
+    <div id="hero-arrow" class="position-absolute bottom-0 start-50 translate-middle-x text-center my-5">
+      <a href="#projects" class="nav-link d-inline-flex flex-column align-items-center">
+        <i class="bi bi-arrow-down-circle text-white fs-1" id="bouncing-arrow" aria-hidden="true"></i>
+        <span class="mt-2 text-white">View My Projects</span>
+      </a>
+    </div>
+          
+  </div>
+  </section>
     <!-- End Hero Section -->
 
     <!-- Projects Section -->
@@ -153,7 +177,9 @@
         <!--Project #3-->
         <div class="col-md-4 py-3" id="cupboard-card">
           <a class="card text-decoration-none text-reset h-100" href="cupboard.html">
-            <img class="img-fluid rounded-top bg-cupboard" src="/assets/img/cupboard-logo.png" alt="Logo for the Carolina Cupboard organization">
+            <div class="bg-cupboard rounded-top h-100 w-100 d-flex justify-content-center align-items-center">
+              <img class="img-fluid" src="/assets/img/cupboard-logo.png" alt="Logo for the Carolina Cupboard organization">
+            </div>
             <div class="card-body">
               <h3>Carolina Cupboard</h3>
               <span class="badge rounded-pill text-bg-secondary">Mobile App</span>
@@ -221,7 +247,7 @@
     </div>
     <div>© 2024 Daniella Escobar | <a href="mailto:daniesco0303@gmail.com">daniesco0303@gmail.com</a></div>
   </footer>
-  <!-- FooEnd ter Section -->
+  <!-- End Footer Section -->
 
 </body>
 

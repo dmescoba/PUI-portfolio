@@ -17,9 +17,9 @@ heroTimeline
     duration: 10000,
     loop: false
   })
-  // Other elements
+  // Other text
   .add({
-    targets: "#hero-title, #hero-positions, #hero-buttons",
+    targets: "#hero-title, #hero-positions, #hero-buttons, #hero-arrow",
     opacity: [0, 1],
     easing: "easeInOutQuad",
     duration: 1000,
@@ -28,7 +28,7 @@ heroTimeline
 //////////////// Homepage Filter ////////////////
 
 // Get element and set event listener for when option is changed
-  document.getElementById('inputGroupSelect').addEventListener('change', function showSelectedDropDownItems() {
+  document.getElementById('inputGroupSelect').addEventListener('change', function () {
   // Save the user's selection in a variable
   let selectedValue = this.value;  
   // Create an array of each card
@@ -81,17 +81,9 @@ heroTimeline
 if (document.body && document.body.id === "about-body") {
 
   //////////////// About Me Animations ////////////////
-document.addEventListener("DOMContentLoaded", function heroAnimationOnLoad() {
+document.addEventListener("DOMContentLoaded", function () {
 
-  // Draw the line
-  anime({
-    targets: ".timeline-line",
-    scaleY: [0, 1], 
-    duration: 2000,
-    easing: "easeInOutQuad"
-});
-
-  // Show the dots
+  // Animate the dots
   anime({
     targets: ".timeline-dot",
     opacity: [0, 1],
@@ -101,6 +93,7 @@ document.addEventListener("DOMContentLoaded", function heroAnimationOnLoad() {
     easing: "easeOutBounce"
 });
 
+  // Animate the Content
 anime({
   targets: ".timeline-content",
   opacity: [0, 1],
@@ -111,12 +104,7 @@ anime({
 });
 });
 }
-
-
-///////////////////NEXT IDEAS //////////////////
-
-  // add a progress bar to project pages
-
+//////////////// Project Offcanvas ////////////////
 
 // Check if the body element has the ID "project-body"
 if (document.body && document.body.id === "project-body") {
