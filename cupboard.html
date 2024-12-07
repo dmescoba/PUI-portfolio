@@ -22,446 +22,178 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
-<body class="index">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body id="project-body">
+
+<!-- Start Navbar -->
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Main navigation">
     <div class="container-fluid mx-4">
-      <a class="navbar-brand" href="index.html"><img src="/assets/img/logo-svg.svg" alt="logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold" href="index.html" aria-label="Homepage">
+        Daniella Escobar
+      </a>
+
+      <!-- Navbar toggler button -->
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!--This div makes the links + linked/mail collapse into a hamburger-->
+      <!-- Collapsible Navbar Links -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!--Navigation links start-->
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <!-- Navigation menu -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/assets/escobar_daniella.pdf" target="_blank">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="about.html" aria-label="Learn about Daniella">About</a>
           </li>
         </ul>
-        <!--Navigation links end-->
 
-        <!--Linkedin + mail start-->
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
-          <li class="nav-item">
-            <a class="icon-link nav-link" href="mailto:daniesco0303@gmail.com">
-              <i class="bi bi-envelope-fill" style="font-size: 1.8rem; color: white;"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="icon-link nav-link" href="https://www.linkedin.com/in/daniesco/">
-              <i class="bi bi-linkedin" style="font-size: 1.5rem; color: white;"></i>
-            </a>
-          </li>
-        </ul>
-        <!--Linkedin + mail end-->
+        <!-- Contact buttons -->
+        <div class="hstack gap-3">
+          <a 
+            href="mailto:daniesco0303@gmail.com" 
+            aria-label="Send an email to Daniella" 
+            class="btn btn-outline-primary" 
+            role="button">
+            Email
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/daniesco/" 
+            aria-label="Visit Daniella's LinkedIn profile" 
+            class="btn btn-outline-primary" 
+            role="button">
+            LinkedIn
+          </a>
+        </div>
       </div>
     </div>
   </nav>
+</header>
 
-  <!--spacer-->
-  <div class="container" style="height: 40px"></div>
-  <!---->
-
-  <!--begin section 1-->
-  <div class="container mt-sm-5 px-5">
-    <div class="row">
-      <div class="col-lg-1"></div>
-      <div class="col-lg-5">
-        <div>
-          <!--centible + mobile app icon-->
-          <div class="d-flex flex-row justify-content-between align-items-center">
-            <h1 class="text-primary display-5"><b>Carolina Cupboard</b></h1>
-          </div>
-          <div>
-            <i class="bi bi-laptop-fill text-primary text fs-5" style="padding-right: 5px;"></i><b>Mobile App</b>
-          </div>
+<div class="min-vh-100 d-flex flex-column justify-content-center align-items-center">
+<!-- Project Details Section -->
+<section aria-label="project-details-section" class="container mt-sm-5 px-5">
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-4">
+      <div>
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <h1 class="text-primary display-5">Carolina Cupboard</h1>
         </div>
-        <!---->
-        <hr>
-        <div class="my-4">
-          <!--Role-->
-          <div>
-            <i class="bi bi-person-fill text-primary text" style="padding-right: 5px;"></i><b>Role</b>
-          </div>
-          <p>UX Researcher</p>
-        </div>
-        <!---->
-        <div>
-          <!--Duration-->
-          <div>
-            <i class="bi bi-clock-fill text-primary text" style="padding-right: 5px;"></i><b>Duration</b>
-          </div>
-          <p>5 months</p>
-        </div>
-        <!---->
-        <div>
-          <!--Responsibilities-->
-          <div>
-            <i class="bi bi-clipboard2-fill text-primary text" style="padding-right: 5px;"></i><b>Responsibilities</b>
-          </div>
-          <p>User interviews, competitor analysis, personas, storyboarding, wireframes</p>
-        </div>
-        <!---->
-
+        <p>
+          <i class="bi bi-tablet-landscape-fill text-primary fs-5" aria-hidden="true"></i>
+          <strong>Mobile App</strong>
+        </p>
       </div>
-
-      <div class="px-0 py-0 col-lg-4 d-flex align-items-center justify-content-center">
-        <div class="container px-0 py-0">
-          <img class="img-fluid px-0 py-0" src="/assets/img/cupboard-logo.png" alt="Carolina Cupboard's Logo">
-        </div>
+      <hr aria-hidden="true">
+      <div class="my-4">
+        <p>
+          <i class="bi bi-person-fill text-primary" aria-hidden="true"></i>
+          <strong>Role:</strong> UX Researcher
+        </p>
       </div>
-
+      <div>
+        <p>
+          <i class="bi bi-clock-fill text-primary" aria-hidden="true"></i>
+          <strong>Duration:</strong> 5 months
+        </p>
+      </div>
+      <div>
+        <p>
+          <i class="bi bi-clipboard2-fill text-primary" aria-hidden="true"></i>
+          <strong>Responsibilities:</strong> User interviews, competitor analysis, personas, 
+          storyboarding, wireframes
+        </p>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="container text-center">
+        <img class="img-fluid" src="/assets/img/cupboard-logo.png" alt="Carolina Cupboard's Logo">
+      </div>
     </div>
     <div class="col-lg-1"></div>
   </div>
+</section>
 
-
-   <!--Section 2-->
-   <div class="container mt-5 px-5">
-
-    <div class="row">
-      <div class="col-lg-1"></div>
-      <div class="col-12 col-lg-10 col-md-12">
-        <div class="d-flex justify-content-between">
-
-          <div class="text-center">
-            <h2 class="text-primary">3</h2>
-            <p style="font-weight: bold;">Designers</p>
-          </div>
-          <div class="vr"></div>
-          <div class="text-center">
-            <h2 class="text-primary">10</h2>
-            <p style="font-weight: bold;">Developers</p>
-          </div>
-          <div class="vr"></div>
-          <div class="text-center">
-            <h2 class="text-primary">2</h2>
-            <p style="font-weight: bold;">Product Managers</p>
-          </div>
-
+<!-- Stats Section -->
+<section aria-labelledby="project-stats-section" role="region" class="container mt-5 px-5">
+  <h2 id="stats-title" class="visually-hidden">Team Composition</h2>
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-12 col-lg-10 col-md-12">
+      <div class="d-flex justify-content-between" aria-label="Team Stats">
+        <div class="text-center">
+          <h3 class="text-primary">3</h3>
+          <p><strong>Designers</strong></p>
+        </div>
+        <div class="vr" aria-hidden="true"></div>
+        <div class="text-center">
+          <h3 class="text-primary">10</h3>
+          <p><strong>Developers</strong></p>
+        </div>
+        <div class="vr" aria-hidden="true"></div>
+        <div class="text-center">
+          <h3 class="text-primary">2</h3>
+          <p><strong>Product Manager</strong></p>
         </div>
       </div>
-      <div class="col-lg-1"></div>
-
     </div>
-
+    <div class="col-lg-1"></div>
   </div>
-  <!--end-->
+</section>
+</div>
 
-  <!--spacer-->
-  <div class="container" style="height: 60px"></div>
-  <!---->
-
-  <!--section 3-->
-  <div class="container-fluid mt-sm-5">
-    <div class="row">
-      <div class="col-md-2 d-none d-sm-block d-sm-none d-md-block border-end border-3">
-        <div class="py-2 ps-5 pe-2 d-flex flex-column sticky-top overflow-y-scroll"
-          style="top: 20px; bottom: 50px; max-width:200px; height: 700px">
-
-          <a href="#discovery" class="pb-4 text-reset text-decoration-none" style="font-size: 0.9rem;">Discovery</a>
-          <a href="#1" class="pb-0 text-white text-decoration-none" style="font-size: 0.9rem;">Phase 1</a>
-          <a href="#listening-sessions" class="pb-2 text-reset text-decoration-none"
-            style="font-size: 0.9rem;">Listening Sessions</a>
-          <a href="#competitor-analysis" class="pb-2 text-reset text-decoration-none" style="font-size: 0.9rem;">Comp.
-            Analysis</a>
-          <a href="#pain-points" class="pb-2 text-reset text-decoration-none" style="font-size: 0.9rem;">Pain Points</a>
-          <a href="#personas" class="pb-4 text-reset text-decoration-none" style="font-size: 0.9rem;">Personas</a>
-          <a href="#2" class="pb-0 text-white text-decoration-none" style="font-size: 0.9rem;">Phase 2</a>
-          <a href="#storyboard" class="pb-2 text-reset text-decoration-none" style="font-size: 0.9rem;">Storyboard</a>
-          <a href="#user-journey" class="pb-2 text-reset text-decoration-none" style="font-size: 0.9rem;">User
-            Journey</a>
-          <a href="#information-architecture" class="pb-2 text-reset text-decoration-none"
-            style="font-size: 0.9rem;">Information Arch.</a>
-          <a href="#sketches" class="pb-2 text-reset text-decoration-none" style="font-size: 0.9rem;">Sketches</a>
-          <a href="#wireframes" class="pb-2 text-reset text-decoration-none" style="font-size: 0.9rem;">Wireframes</a>
-          <a href="#client-meeting" class="pb-4 text-reset text-decoration-none" style="font-size: 0.9rem;">Client Meeting</a>
-          <a href="#3" class="pb-0 text-white text-decoration-none" style="font-size: 0.9rem;">Phase 3</a>
-          <a href="#gala" class="pb-2 text-reset text-decoration-none" style="font-size: 0.9rem;">Gala Presentation</a>
-          <a href="#takeaways" class="pb-2 text-reset text-decoration-none" style="font-size: 0.9rem;">Takeaways</a>
-          <a href="#next-steps" class="pb-4 text-reset text-decoration-none" style="font-size: 0.9rem;">Next Steps</a>
-
-        </div>
-      </div>
-
-      <div class="col-md-10 col-sm-12 px-5">
-
-        <!--Section 3.1: context-->
-        <h2 class="text-primary"><a id="discovery">Discovery</a></h2>
-        <p>Carolina Cupboard is the largest of the four food pantries on the UNC-Chapel Hill campus. Its primary objective is to offer food assistance to members of the university community, including staff, faculty, students, and alumni, who are facing food insecurity. Seeking to take their operations digital, the organization sought assistance from App Team Carolina to develop a system aimed at aiding their Shift Leaders in efficiently managing inventory. In this multi-phase project, our team initially focused on prioritizing the enhancement of the Shift Leader experience, with plans to shift our focus to improving the Patron experience in the upcoming months.</p>
-        <div class="row my-md-1 gx-5 gy-3">
-          <div class="col-md-6 col-12">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title text-white">Challenge</h4>
-                <p class="card-text">Shift Leaders, who are volunteers at the food pantry, encounter challenges in tracking and managing inventory effectively. The current system is time-consuming and labor-intensive in monitoring items nearing expiration or running low on stock. On the other hand, Patrons of the food pantry want additional safeguards to maintain their privacy while receiving items from the pantry, as well as a way to view the items currently in stock from the comfort of their homes.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-12">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title text-white">Proposed Solution</h4>
-                <p class="card-text">Utilizing the bar codes found on the majority of pantry items, develop an inventory management system that effortlessly adds and removes items from stock by scanning them through a mobile application. By digitizing the pantry's inventory, patrons can preview available items in advance. Additionally, the application will facilitate patrons in scheduling private visits to the pantry for item retrieval and will support online orders and special requests, which can be placed beforehand to reduce in-person time at the pantry.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!---->
-
-        <!--spacer-->
-        <div class="container" style="height: 50px"></div>
-        <!---->
-
-        <!--Section 3.2: Phase 1-->
-        <div class="bg-primary p-4 rounded ">
-          <span class="badge text-bg-dark mb-2"><a id="1">Phase 1</a></span>
-          <!--<p class="mt-5">Phase 1</p><!-->
-          <h1 class="display-5 text-dark"><b>Understanding the User</b></h1>
-          <p class="text-dark"><i><b>Listening sessions, competitor analysis, pain points and personas</b></i></p>
-          <hr class="text-dark">
-        </div>
-        <!---->
-
-        <!--Section 3.3: Listening Sessions-->
-        <h2 class="mt-5 text-primary"><a id="listening-sessions">Listening Sessions</a></h2>
-        <div class="my-3 text-light d-flex flex-row border w-100 rounded align-items-center px-2 py-1">
-          <i class="bi bi-bookmark-check-fill" style="font-size: 1.5rem;"></i><b class="px-1">Takeaway: </b>
-          Shift Leaders must be responsible for scanning items both in and out of the pantry.
-        </div>
-        <p>After receiving an initial project brief and feature prioritization from our product managers following their meeting with the executive team of Carolina Cupboard, each member of our design team visited the food pantry. During these visits, we individually interviewed Shift Leaders while they were on duty. This approach not only provided us with insights into the physical layout and current operations of the food pantry but also allowed us to observe firsthand the experience of patrons entering and exiting the pantry. Some of the questions we posed during these interviews included:</p>
-        <div class="row gy-3 d-flex flex-wrap">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body shadow-md">
-                <i class="bi bi-chat-quote-fill fs-5 text-primary" style="padding-right: 5px;"></i>What works well about your current, non-digital system of tracking inventory?  
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body shadow-md">
-                <i class="bi bi-chat-quote-fill fs-5 text-primary" style="padding-right: 5px;"></i>How does the pantry currently manage the privacy of patrons?
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body shadow-md">
-                <i class="bi bi-chat-quote-fill fs-5 text-primary" style="padding-right: 5px;"></i>Walk me through a typical shift. What are your responsibilities?
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--Section 3.4: Competitor Analysis-->
-        <h2 class="mt-5 text-primary"><a id="competitor-analysis">Competitor Analysis</a></h2>
-        <div class="my-3 text-light d-flex flex-row border w-100 rounded align-items-center px-2 py-1">
-          <i class="bi bi-bookmark-check-fill" style="font-size: 1.5rem;"></i><b class="px-1">Takeaway: </b> Organize items into readily understandable categories, such as "Low Stock" or "Expiring Soon."
-        </div>
-        <p class="mb-4">Our team conducted a thorough analysis of two prominent inventory management applications, Tookstock and My Pantry Tracker, in addition to Yuka for its seamless barcode scanning and exceptional search and nutrition facts interfaces. Given the extensive inventory comprising hundreds of items, spanning food, personal hygiene, and specialty donations, Shift Leaders emphasized the critical need to promptly identify items that were either nearing expiration or running low on stock. This awareness is vital for facilitating timely donation requests for replenishment.</p>
-        <div class="ratio ratio-16x9">
-          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSDUCU6fV6-bORWG2tUEkN2TQxnLxFyukw4uyxjo898DamUosWLTug1Zz26eZK77k2zbFUA2NS8RR51/pubhtml?widget=true&amp;headers=false"></iframe>
-        </div>
-        <!---->
-
-        <!--Section 3.5: Pain Points-->
-        <h2 class="mt-5 text-primary"><a id="pain-points">Pain Points</a></h2>
-        <p class="mb-4">We summarized the insights gathered from our listening sessions and competitor analysis into four major pain points for each user group. Among these concerns was the paramount importance of preserving patrons'  privacy while also facilitating online orders and pantry reservations through the application.</p>
-        <img class="img-fluid mb-5" src="/assets/img/cupboard-pp1.png" alt="Carolina Cupboard user pain points">
-        <img class="img-fluid" src="/assets/img/cupboard-pp2.png" alt="Carolina Cupboard user pain points">
-
-        <!---->
-
-        <!--Section 3.6: Personas-->
-        <h2 class="mt-5 text-primary"><a id="personas">Personas</a></h2>
-        <p class="mb-4">Compiling our research into personas helped us simplify our goals into actionable insights. Our first objective was to expedite the development of the Shift Leader interface to ensure its functionality as soon as possible, However, we also recognized the importance of considering the Patron interface to ensure seamless integration as we transitioned into that phase of the project in the coming months.</p>
-        <div class="d-flex flex-wrap">
-          <img class="img-fluid col-md-6 mb-3" src="/assets/img/cupboard-p1.png" alt="Carolina Cupboard persona">
-          <img class="img-fluid col-md-6 mb-3 px-3" src="/assets/img/cupboard-p2.png" alt="Carolina Cupboard persona">        </div>
-        <!---->
+<!-- Under Construction -->
+<div class="container my-5 p-5 d-flex flex-column" role="main" aria-label="main-content">
+  <img 
+    class="img-fluid w-50 mx-auto" 
+    src="/assets/img/under-construction.png" 
+    alt="Illustration of construction indicating this section is not yet complete.">
+  <h1 class="mt-3 text-white">This part of the website is currently under construction...</h1>
+  <p class="text-white">Check out these pages that are up and running:</p>
+  <ul>
+    <li>
+      <a href="bubbly.html" aria-label="Learn about the Bubbly iPad App project">
+        Bubbly iPad App
+      </a>
+    </li>
+    <li>
+      <a href="amazon.html" aria-label="Learn about my Amazon Web Services Internship">
+        Amazon Web Services Internship
+      </a>
+    </li>
+    <li>
+      <a href="lumen.html" aria-label="Learn about my Lumen Technologies Internship">
+        Lumen Technologies Internship
+      </a>
+    </li>
+  </ul>
+</div>
 
 
-        <!--spacer-->
-        <div class="container" style="height: 100px"></div>
-        <!---->
 
-        <!--Section 3.7: Phase 2-->
-        <div class="bg-primary p-4 rounded ">
-          <span class="badge text-bg-dark mb-2"><a id="2">Phase 2</a></span>
-          <!--<p class="mt-5">Phase 1</p><!-->
-          <h1 class="display-5 text-dark"><b>Starting the Design</b></h1>
-          <p class="text-dark"><i><b>Story Board, User journey, information architecture, sketches, wireframes, high-fidelity
-                prototype V1.</b></i></p>
-          <hr class="text-dark">
-        </div>
-        <!---->
-
-        <!--Section 3.7: Story Board-->
-        <h2 class="mt-5 text-primary"><a id="storyboard">Storyboard</a></h2>
-        <p class="mb-4">Creating storyboards for both the Shift Leader and Patron perspectives proved invaluable in delineating the points at which each user would be involved and what actions would need to take. Notably, Shift Leaders shoulder much of the responsibility, while Patrons have  three distinct actions they can take, each prompting Shift Leaders in various ways.</p>
-        <img class="img-fluid mb-4" src="/assets/img/cupboard-sb.png" alt="Carolina Cupboard user journey data scientists">
-        <!---->
-
-        <!--Section 3.7: User Journey-->
-        <h2 class="mt-5 text-primary"><a id="user-journey">User Journey</a></h2>
-        <p class="mb-4">From receiving an alert and removing an expired item to fulfilling a patron order request, our team created a number of user journeys based on each potential use case. Below is the user journey we identified as the most prevalent for Shift Leaders: scanning a new item into inventory and checking out a Patron.</p>
-        <img class="img-fluid mb-4" src="/assets/img/cupboard-uj.png" alt="Carolina Cupboard user journey data scientists">
-        <!---->
-
-        <!--Section 3.7: Information Architecture-->
-        <h2 class="mt-5 text-primary"><a id="information-architecture">Information Architecture</a></h2>
-        <p class="mb-4">Our greatest challenge regarding the information architecture for the Shift Leader view centered on distinguishing between scanning an item into inventory versus scanning an item out. Initially, we contemplated integrating these functions on the same page, prompting the Shift Leader to select the action they were initiating. However, we were concerned that this approach might prove tedious and confusing for users. Consequently, we opted to place them to separate screens to clearly  indicate their opposing effects on inventory. We decided to label these actions “Checkout” and “Add Item” to to be more user-friendly.</p>
-        <img class="img-fluid" src="/assets/img/cupboard-ia.png" alt="Carolina Cupboard information architecture">
-        <!---->
-
-        <!--Section 3.8: Sketches-->
-        <h2 class="mt-5 text-primary"><a id="sketches">Sketches</a></h2>
-        <p class="mb-4">We explored different methods of organizing stock for the Shift Leaders, ranging from a searchable database structured with separate sections for each category of items (similar to many grocery shopping apps), to a centralized dashboard featuring widgets that prompt users to access additional details. Determining how to split the views between Shift Leaders and Patrons posed a challenge, and we questioned whether designing them differently would offer any advantages. 
-        </p>
-        <img class="img-fluid" src="/assets/img/centible-sketches.JPG" alt="Carolina Cupboard Sketches">
-        <!---->
-
-        <!--Section 3.9: Wireframes-->
-        <h2 class="mt-5 text-primary"><a id="wireframes">Wireframes</a></h2>
-        <p class="mb-4">Our design team collaborated extensively with our back-end developers to refine how categorization would be handled for items within the system. We determined that the most logical approach would be to categorize items into broader categories like “Canned Goods” or  “Produce,” then further sub-categorizing them into more specific groups such as “Legumes” and “Vegetables.” Additionally, each item would be accompanied by relevant tags, allowing users to conduct more nuanced searches beyond just category, sub-category, brand, name, or allergens. For instance, users could search based on additional attributes like the item's weight  in ounces.</p>
-        <h4 class="mb-2 text-white">Dashboard</h4>
-        <img class="img-fluid mb-4" src="/assets/img/cupboard-wireframes-1.png" alt="Carolina Cupboard wireframes">
-        <h4 class="mb-2 text-white">Removing and Adding Items</h4>
-        <img class="img-fluid" src="/assets/img/cupboard-wireframes-2.png" alt="Carolina Cupboard wireframes">
-        <div class="ratio ratio-16x9 mt-5">
-          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FoYMrBxIJjVVWpF568l4yJ0%2FPortfolio-Prototypes%3Ftype%3Ddesign%26node-id%3D1106-765%26t%3DCGKMZfZeAx1GBQeP-1%26scaling%3Dscale-down%26page-id%3D1106%253A320%26starting-point-node-id%3D1106%253A765%26mode%3Ddesign" allowfullscreen></iframe>
-
-        </div>
-        <!---->
-
-        <!--Section 3.3: Client Meeting-->
-        <h2 class="mt-5 text-primary"><a id="client-meeting">Client Meeting</a></h2>
-        <p>The executive team at Carolina Cupboard was thrilled with our application's progress and provided valuable feedback,  highlighting areas for improvement and raising some clarifying questions for us to address with our team.</p>
-        <div class="row gy-3 d-flex flex-wrap">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body shadow-md">
-                <i class="bi bi-chat-quote-fill fs-5 text-primary" style="padding-right: 5px;"></i>Can you include a way for Shift Leaders to specify the quantity of the items they’re scanning in/out?   
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body shadow-md">
-                <i class="bi bi-chat-quote-fill fs-5 text-primary" style="padding-right: 5px;"></i>Are patrons notified when we have the item(s) they requested in stock?
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body shadow-md">
-                <i class="bi bi-chat-quote-fill fs-5 text-primary" style="padding-right: 5px;"></i>How can we send alerts to patrons? Such as notifying them if the pantry is closed on a certain day? 
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--spacer-->
-        <div class="container" style="height: 100px"></div>
-        <!---->
-
-        <!--Section 4.7: Phase 4-->
-        <div class="bg-primary p-4 rounded ">
-          <span class="badge text-bg-dark mb-2"><a id="3">Phase 3</a></span>
-          <!--<p class="mt-5">Phase 1</p><!-->
-          <h1 class="display-5 text-dark"><b>Going Forward</b></h1>
-          <p class="text-dark"><i><b>Gala Presentation, Takeaways, Next Steps</b></i></p>
-          <hr class="text-dark">
-        </div>
-        <!---->
-
-        <!--Section 3.8: Gala Presentation-->
-        <h2 class="mt-5 text-primary"><a id="gala">Gala Presentation</a></h2>
-        <p class="mb-4">At the conclusion of each semester, every Production Team within App  Team Carolina delivers presentations showcasing our progress to our  organization, comprising over 100 members, as well as to the respective  clients of each project during a Gala event. This year, I took the lead  in presenting the wireframes for Carolina Cupboard while the other designers on the team shared our research and findings.
-        </p>
-        <div id="carouselGala" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/assets/img/gala1.jpg" class="d-block w-100" alt="Gala Presentation">
-            </div>
-            <div class="carousel-item">
-              <img src="/assets/img/gala2.JPG" class="d-block w-100" alt="Iterations to Bubbly">
-            </div>
-            <div class="carousel-item">
-              <img src="/assets/img/gala3.jpg" class="d-block w-100" alt="Iterations to Bubbly">
-            </div>
-            <div class="carousel-item">
-              <img src="/assets/img/gala4.jpg" class="d-block w-100" alt="Iterations to Bubbly">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselGala"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselGala"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>        <!---->
-
-        <!--Section 4.8: Takeaways-->
-        <h2 class="mt-5 text-primary"><a id="takeaways">Takeaways</a></h2>
-        <h4 class="mt-4 text-white">What I Learned</h4>
-        <ul>
-          <li class="p-1">Transforming a non-digital system into a technologically driven one was a daunting, but incredibly exciting task! I aspire to be involved with similar projects in the future.</li>
-          <li class="p-1">Visiting the food pantry in person and familiarizing ourselves with their facilitates was invaluable. It not only enabled productive discussions within our team, but also fostered a deeper sense of empathy towards our users by allowing us to understand their needs firsthand</li>
-          <li class="p-1">When designing for an existing organization, your proposed solution must carefully consider the organization's existing operational framework. Deviating too far from their established system greatly diminishes the likelihood of your solution being embraced and sustained over time</li>
-        </ul>
-        <!---->
-
-        <!--Section 4.8: Next Steps-->
-        <h2 class="mt-5 text-primary"><a id="next-steps">Next Steps</a></h2>
-        <p>Unfortunately, I graduated before having the chance to participate in the prototyping and testing phases of our solution. However, I am immensely grateful for the opportunity to have contributed to the initial design phases of such an important cause in our community. This project is very near and dear to my heart for the impact I believe it can make in the lives of those experiencing food insecurity.</p>
-        <!---->
-
-      </div>
-      <!--spacer-->
-      <div class="container" style="height: 100px"></div>
-      <!---->
-      <!--start section 3 (footer)-->
-      <footer class="bg-body-tertiary text-center py-4">
-        <div class="container d-flex justify-content-center mb-2">
-          <a class="icon-link nav-link p-2" href="https://www.linkedin.com/in/daniesco/"><i class="bi bi-linkedin"
-              style="font-size: 2rem; color: white;"></i></a>
-          <a class="icon-link nav-link p-2" href="https://dribbble.com/daniesco"><i class="bi bi-dribbble"
-              style="font-size: 2rem; color: white;"></i></a>
-          <a class="icon-link nav-link p-2" href="https://medium.com/@daniesco0303"><i class="bi bi-medium"
-              style="font-size: 2rem; color: white;"></i></a>
-          <a class="icon-link nav-link p-2" href="https://www.behance.net/daniellaescobar3"><i class="bi bi-behance"
-              style="font-size: 2rem; color: white;"></i></a>
-          <a class="icon-link nav-link p-2" href="https://github.com/daniellaescobar"><i class="bi bi-github"
-              style="font-size: 2rem; color: white;"></i></a>
-        </div>
-        <div class="text-center p-3">
-          © 2023 designed and developed by daniella escobar | <a
-            href="mailto:daniesco0303@gmail.com">daniesco0303@gmail.com</a></div>
-      </footer>
+  <!-- Footer Section -->
+  <footer class="bg-body-tertiary text-center py-4">
+    <div class="container">
+      <nav aria-label="Footer Links">
+        <a href="https://www.linkedin.com/in/daniesco/" aria-label="Daniella's-LinkedIn">
+          <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+      </nav>
     </div>
-
-  </div>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+    <div>© 2024 Daniella Escobar | <a href="mailto:daniesco0303@gmail.com" aria-label="Daniella's Email">daniesco0303@gmail.com</a></div>
+  </footer>
+  <!-- End Footer Section -->
+      
 </body>
 
 </html>

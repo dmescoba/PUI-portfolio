@@ -19,16 +19,16 @@ if (document.body && document.body.id === "index-body") {
     easing: 'easeInOutSine',
     duration: 10000,
     loop: false
-  }) // Other elements
+  }) // Other text
   .add({
-    targets: "#hero-title, #hero-positions, #hero-buttons",
+    targets: "#hero-title, #hero-positions, #hero-buttons, #hero-arrow",
     opacity: [0, 1],
     easing: "easeInOutQuad",
     duration: 1000
   }, '-=8000'); //////////////// Homepage Filter ////////////////
   // Get element and set event listener for when option is changed
 
-  document.getElementById('inputGroupSelect').addEventListener('change', function showSelectedDropDownItems() {
+  document.getElementById('inputGroupSelect').addEventListener('change', function () {
     // Save the user's selection in a variable
     var selectedValue = this.value; // Create an array of each card
 
@@ -71,15 +71,8 @@ if (document.body && document.body.id === "index-body") {
 
 if (document.body && document.body.id === "about-body") {
   //////////////// About Me Animations ////////////////
-  document.addEventListener("DOMContentLoaded", function heroAnimationOnLoad() {
-    // Draw the line
-    (0, _animeEs["default"])({
-      targets: ".timeline-line",
-      scaleY: [0, 1],
-      duration: 2000,
-      easing: "easeInOutQuad"
-    }); // Show the dots
-
+  document.addEventListener("DOMContentLoaded", function () {
+    // Animate the dots
     (0, _animeEs["default"])({
       targets: ".timeline-dot",
       opacity: [0, 1],
@@ -87,7 +80,8 @@ if (document.body && document.body.id === "about-body") {
       delay: _animeEs["default"].stagger(500),
       duration: 1000,
       easing: "easeOutBounce"
-    });
+    }); // Animate the Content
+
     (0, _animeEs["default"])({
       targets: ".timeline-content",
       opacity: [0, 1],
@@ -97,8 +91,7 @@ if (document.body && document.body.id === "about-body") {
       easing: "easeOutBounce"
     });
   });
-} ///////////////////NEXT IDEAS //////////////////
-// add a progress bar to project pages
+} //////////////// Project Offcanvas ////////////////
 // Check if the body element has the ID "project-body"
 
 

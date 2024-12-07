@@ -12,12 +12,6 @@ html footer i:hover {
   transform: scale(1.15);
 }
 
-/*$secondary: #32C192;*/
-/*.circle{
-    height: 100vh;
-    background: $primary;
-    border-radius: 0 50% 50% 0;
-}*/
 .bg-centible {
   background-color: #B98FB5;
 }
@@ -34,12 +28,17 @@ html footer i:hover {
   background-color: #81B2D4;
 }
 
-/* for icons, it's also in HTML head so this may not be necesarry */
-/*!
- * Bootstrap  v5.3.0 (https://getbootstrap.com/)
- * Copyright 2011-2023 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+.timeline-dot:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  right: calc(100% + 40px);
+  top: 0;
+  background-color: #63ABFF;
+}
+
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;

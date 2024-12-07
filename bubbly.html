@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +8,7 @@
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,62 +16,80 @@
   <!--Scripts-->
   <script type="module" src="/assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-  <!--CSS-->
-  <link rel="stylesheet" href="/assets/css/main.css">
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+  crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
 <body id="project-body">
-  <!-- Navigation -->
+
+<!-- Start Navbar -->
+<header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Main navigation">
     <div class="container-fluid mx-4">
-      <a class="navbar-brand" href="index.html">
-        <img src="/assets/img/logo-svg.svg" alt="Daniella Escobar logo" aria-label="Homepage">
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold" href="index.html" aria-label="Homepage">
+        Daniella Escobar
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+      <!-- Navbar toggler button -->
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Collapsible Navbar Links -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" role="menu">
-          <li class="nav-item" role="menuitem">
+        <!-- Navigation menu -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Projects</a>
           </li>
-          <li class="nav-item" role="menuitem">
-            <a class="nav-link" href="/assets/escobar_daniella.pdf" target="_blank" aria-label="View Resume">Resume</a>
-          </li>
-          <li class="nav-item" role="menuitem">
-            <a class="nav-link" href="about.html" aria-label="Learn About Daniella">About</a>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" aria-label="Learn about Daniella">About</a>
           </li>
         </ul>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
-          <li class="nav-item">
-            <a class="icon-link nav-link" href="mailto:daniesco0303@gmail.com" aria-label="Email Daniella">
-              <i class="bi bi-envelope-fill" style="font-size: 1.8rem;"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="icon-link nav-link" href="https://www.linkedin.com/in/daniesco/" aria-label="Daniella's LinkedIn">
-              <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
-            </a>
-          </li>
-        </ul>
+
+        <!-- Contact buttons -->
+        <div class="hstack gap-3">
+          <a 
+            href="mailto:daniesco0303@gmail.com" 
+            aria-label="Send an email to Daniella" 
+            class="btn btn-outline-primary" 
+            role="button">
+            Email
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/daniesco/" 
+            aria-label="Visit Daniella's LinkedIn profile" 
+            class="btn btn-outline-primary" 
+            role="button">
+            LinkedIn
+          </a>
+        </div>
       </div>
     </div>
   </nav>
+</header>
 
-
+<div class="min-vh-100 d-flex flex-column justify-content-center align-items-center">
   <section aria-labelledby="hero-section">
     <!-- Alert Section -->
-    <section aria-labelledby="alert-title">
+    <section aria-label="alert">
       <div class="container px-5">
         <div class="row">
           <div class="col-lg-1"></div>
           <div class="col-lg-10">
-            <div class="alert alert-primary mt-4 text-center" role="alert">
+            <div class="alert alert-primary text-center" role="alert">
               <h2 id="alert-title" class="visually-hidden">Important Announcement</h2>
-              <p>
+              <p class="mb-0">
                 Perkins School for the Blind
                 <a href="https://www.perkins.org/resource/bubbly-new-cvi-literacy-app/" class="alert-link"
                   aria-label="Read more about the release of Bubbly on Perkins School for the Blind website">
@@ -95,13 +109,13 @@
     </section>
 
     <!-- Project Details Section -->
-    <section aria-labelledby="bubbly-section-title" role="region" class="container mt-sm-4 px-5">
+    <section aria-label="project-details-section" class="container mt-sm-4 px-5">
       <div class="row">
         <div class="col-lg-1"></div>
         <div class="col-lg-4">
           <div>
             <div class="d-flex flex-row justify-content-between align-items-center">
-              <h1 id="bubbly-section-title" class="text-primary display-5">Bubbly</h1>
+              <h1 class="text-primary display-5">Bubbly</h1>
               <div>
                 <a href="https://apps.apple.com/us/app/bubbly-cvi-literacy/id1616368300" target="_blank"
                   class="btn btn-outline-primary" aria-label="View Bubbly app on the App Store">
@@ -145,7 +159,7 @@
     </section>
 
     <!-- Stats Section -->
-    <section aria-labelledby="stats-title" role="region" class="container mt-5 px-5">
+    <section aria-labelledby="project-stats-section" role="region" class="container mt-5 px-5">
       <h2 id="stats-title" class="visually-hidden">Team Composition</h2>
       <div class="row">
         <div class="col-lg-1"></div>
@@ -171,14 +185,15 @@
       </div>
     </section>
   </section>
+</div>
 
-  <!-- Div for the entire main content -->
+  <!-- Main Content -->
   <main class="container-fluid mt-sm-5">
     <!-- Makes the aside and main content a row -->
     <div class="row">
       <!-- Sidebar Navigation -->
       <aside class="col-md-2 d-none d-md-block p-3 vh-100 sticky-top overflow-y-scroll">
-        <nav aria-label="Section Navigation">
+        <nav aria-label="section-navigation">
           <ul class="nav flex-column">
             <li class="nav-item">
               <a href="#discovery" class="nav-link text-reset">Discovery</a>
@@ -256,9 +271,7 @@
         </nav>
       </aside>
 
-
-
-
+      <!-- Offcanvas Sidebar Navigation -->
       <aside class="d-md-none">
         <button id="offcanvas-trigger" class="btn btn-secondary w-100 my-5" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-expanded="false">
@@ -271,7 +284,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <nav aria-label="Section Navigation">
+            <nav aria-label="section-avigation">
               <ul class="nav flex-column">
                 <li class="nav-item">
                   <a href="#discovery" class="nav-link text-reset">Discovery</a>
@@ -350,14 +363,13 @@
           </div>
         </div>
       </aside>
-
-
-
       <div class="col-md-10 col-sm-12 px-5">
 
         <!-- Discovery -->
-        <section aria-labelledby="discovery-heading">
-          <h2 id="discovery" class="text-primary">Discovery</h2>
+        <section aria-labelledby="discovery">
+          <h2 class="mt-5 text-primary">
+            <a id="discovery" href="#discovery" aria-hidden="true" tabindex="-1">Discovery</a>
+          </h2>
           <p class="mb-4">
             Cortical Visual Impairment (CVI) is currently the leading cause of visual impairment in children in the
             United States. This condition arises due to brain damage affecting the visual processing areas,
@@ -369,7 +381,7 @@
             experience for their students.
           </p>
 
-          <!-- Embedded YouTube Video -->
+          <!-- YouTube Video -->
           <div class="ratio ratio-16x9">
             <iframe src="https://www.youtube.com/embed/oY9JOEByuD0" title="YouTube video: Bubbly project explanation"
               frameborder="0"
@@ -382,9 +394,9 @@
           <!-- Challenges and Solutions -->
           <div class="row mt-3 mb-md-5 gx-5 gy-3">
             <div class="col-md-6 col-12">
-              <div class="card" role="region" aria-labelledby="challenge-title">
+              <div class="card" role="region" aria-label="challenges">
                 <div class="card-body">
-                  <h4 id="challenge-title" class="card-title text-white">Challenge</h4>
+                  <h4 class="card-title text-white">Challenge</h4>
                   <p class="card-text">
                     There are not many apps available that cater to students with CVI. Due to their
                     unique visual needs and often young age, most students with CVI cannot access the abundant online
@@ -395,9 +407,9 @@
             </div>
 
             <div class="col-md-6 col-12">
-              <div class="card" role="region" aria-labelledby="solution-title">
+              <div class="card" role="region" aria-label="solution">
                 <div class="card-body">
-                  <h4 id="solution-title" class="card-title text-white">Proposed Solution</h4>
+                  <h4 class="card-title text-white">Proposed Solution</h4>
                   <p class="card-text">
                     An interactive gaming app that allows younger students with CVI to playfully
                     improve their condition and gradually develop their vision. The game will be based on the
@@ -411,9 +423,9 @@
 
 
         <!--Phase 1-->
-        <section class="bg-primary p-4 rounded" aria-labelledby="phase-1-heading">
+        <section class="bg-primary p-4 rounded" aria-label="phase-1" section>
           <span class="badge text-bg-dark mb-2">
-            <a id="1" class="text-reset" aria-hidden="true">Phase 1</a>
+            <a id="1" href="#phase-1" aria-label="Skip to Phase 1 content">Phase 1</a>
           </span>
           <h1 id="phase-1-heading" class="display-5 text-dark">
             <b>Understanding the User</b>
@@ -425,8 +437,10 @@
         </section>
 
         <!--Listening Sessions-->
-        <section aria-labelledby="listening-sessions-heading">
-          <h2 id="listening-sessions" class="mt-5 text-primary">Listening Sessions</h2>
+        <section aria-labelledby="listening-sessions">
+          <h2 class="mt-5 text-primary">
+            <a id="listening-sessions" href="#listening-sessions" aria-hidden="true" tabindex="-1">Listening Sessions</a>
+          </h2>
           <div class="my-3 text-light d-flex flex-row border w-100 rounded align-items-center px-2 py-1">
             <i class="bi bi-bookmark-check-fill" style="font-size: 1.5rem;" aria-hidden="true"></i>
             <b class="px-1">Takeaway:</b>
@@ -460,7 +474,7 @@
         </section>
 
         <!--Competitor Analysis-->
-        <section aria-labelledby="competitor-analysis-heading">
+        <section aria-labelledby="competitor-analysis">
           <h2 class="mt-5 text-primary">
             <a id="competitor-analysis" href="#competitor-analysis" aria-hidden="true" tabindex="-1">Competitor
               Analysis</a>
@@ -485,7 +499,7 @@
         </section>
 
         <!--Pain Points-->
-        <section aria-labelledby="pain-points-heading">
+        <section aria-labelledby="pain-points">
           <h2 class="mt-5 text-primary">
             <a id="pain-points" href="#pain-points" aria-hidden="true" tabindex="-1">Pain Points</a>
           </h2>
@@ -502,8 +516,10 @@
         </section>
 
         <!--Personas-->
-        <section aria-labelledby="personas-heading">
-          <h2 class="mt-5 text-primary" id="personas">Personas</h2>
+        <section aria-labelledby="personas">
+          <h2 class="mt-5 text-primary">
+            <a id="personas" href="#personas" aria-hidden="true" tabindex="-1">Personas</a>
+          </h2>
           <p class="mb-4">
             Compiling our research into personas helped us simplify our goals into actionable insights. Taking into
             account our two primary types of users, guardians and students, we were now ready to start the design.
@@ -523,10 +539,10 @@
         </section>
 
         <!--Phase 2-->
-        <section aria-labelledby="phase-2">
+        <section aria-label="phase-2">
           <div class="bg-primary p-4 rounded">
             <span class="badge text-bg-dark mb-2">
-              <a id="phase-2" href="#phase-2" aria-hidden="true" tabindex="-1">Phase 2</a>
+              <a id="2" href="#phase-2" aria-label="Skip to Phase 2 content">Phase 2</a>
             </span>
             <h1 class="display-5 text-dark"><b>Starting the Design</b></h1>
             <p class="text-dark">
@@ -612,7 +628,7 @@
         </section>
 
         <!--Phase 3-->
-        <section class="text-bg-primary p-4 rounded" aria-labelledby="phase-3-heading">
+        <section class="text-bg-primary p-4 rounded" aria-label="phase-3">
           <span class="badge text-bg-dark mb-2">
             <a id="3" href="#phase-3-heading" aria-label="Skip to Phase 3 content">Phase 3</a>
           </span>
@@ -623,8 +639,10 @@
         </section>
 
         <!--Client Feedback-->
-        <section aria-labelledby="client-feedback-heading">
-          <h2 id="client-feedback-heading" class="mt-5 text-primary">Client Feedback</h2>
+        <section aria-labelledby="client-feedback">
+          <h2 class="mt-5 text-primary">
+            <a id="client-feedback" href="#client-feedback" aria-hidden="true" tabindex="-1">Client Feedback</a>
+          </h2>
           <p class="mb-4">
             After showing our wireframes to the clients, they suggested several features to be integrated
             into the high-fidelity prototype, including more levels and a guardian-friendly progress preview option.
@@ -639,9 +657,10 @@
         </section>
 
         <!--Iterations V1-->
-        <section aria-labelledby="iterations-heading">
-          <h2 id="iterations-heading" class="mt-5 text-primary">Iterations V1</h2>
-
+        <section aria-labelledby="iterations-v1">
+          <h2 class="mt-5 text-primary">
+            <a id="iterations-v1" href="#iterations-v1" aria-hidden="true" tabindex="-1">Iterations V1</a>
+          </h2>
           <article aria-labelledby="settings-improvement">
             <h3 id="settings-improvement" class="mt-2 text-white">First Major Improvement: Settings</h3>
             <p>Extensive customization, including a radius of error, wait time before the letters bounce, if the user
@@ -689,107 +708,123 @@
 
 
         <!--High Fidelity Prototype V1-->
-        <h2 class="mt-5 text-primary"><a id="hi-fi-1">High Fidelity Prototype V1</a></h2>
-        <p class="mb-4">Our high-fidelity prototype synthesized our user feedback into a usable prototype we could show
-          to our developers.</p>
-        <div class="ratio ratio-16x9">
-          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
-            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FoYMrBxIJjVVWpF568l4yJ0%2FPortfolio-Prototypes%3Fpage-id%3D1%253A2%26type%3Ddesign%26node-id%3D1-5580%26viewport%3D1378%252C1466%252C0.12%26t%3D9zEWV2uXz3dxjRwq-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A5580%26show-proto-sidebar%3D1%26mode%3Ddesign"
-            aria-label="An embedded Figma prototype of the first high-fidelity prototype for Bubbly."
-            allowfullscreen></iframe>
-        </div>
-
+        <section aria-labelledby="hi-fi-1">
+          <h2 class="mt-5 text-primary">
+            <a id="hi-fi-1" href="#hi-fi-1" aria-hidden="true" tabindex="-1">High Fidelity Prototype</a>
+          </h2>
+          <p class="mb-4">Our high-fidelity prototype synthesized our user feedback into a usable prototype we could show
+            to our developers.</p>
+          <div class="ratio ratio-16x9">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FoYMrBxIJjVVWpF568l4yJ0%2FPortfolio-Prototypes%3Fpage-id%3D1%253A2%26type%3Ddesign%26node-id%3D1-5580%26viewport%3D1378%252C1466%252C0.12%26t%3D9zEWV2uXz3dxjRwq-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A5580%26show-proto-sidebar%3D1%26mode%3Ddesign"
+              aria-label="An embedded Figma prototype of the first high-fidelity prototype for Bubbly."
+              allowfullscreen></iframe>
+          </div>
+        </section>
 
         <!--App Store Launch-->
-        <div class="mt-5 d-flex justify-content-between">
-          <h2 class="text-primary"><a id="app-store-launch">App Store Launch</a></h2>
-          <div><a href="https://apps.apple.com/us/app/bubbly-cvi-literacy/id1616368300" target="_blank"
-              class="btn btn-primary">View on App Store</a></div>
-        </div>
-        <p class="mb-4">As of December 2022, Bubbly had 50,000 unique downloads from the App Store! We are continuously
-          responding to
-          user feedback to improve the experience, from fixing bugs to adding in new features. </p>
-        <img class="img-fluid" src="/assets/img/bubbly-app-store.png" alt="Bubbly on the App Store">
-
+        <section aria-labelledby="app-store-launch">
+          <div class="mt-5 d-flex justify-content-between">
+            <h2 class="mt-5 text-primary">
+              <a id="app-store-launch" href="#app-store-launch" aria-hidden="true" tabindex="-1">App Store Launch</a>
+            </h2>
+            <div><a href="https://apps.apple.com/us/app/bubbly-cvi-literacy/id1616368300" target="_blank"
+                class="btn btn-primary">View on App Store</a></div>
+          </div>
+          <p class="mb-4">As of December 2022, Bubbly had 50,000 unique downloads from the App Store! We are continuously
+            responding to
+            user feedback to improve the experience, from fixing bugs to adding in new features. </p>
+          <img class="img-fluid" src="/assets/img/bubbly-app-store.png" alt="Bubbly on the App Store">
+        </section>
 
         <!--Iterations v2-->
-        <h2 class="mt-5 text-primary"><a id="iterations-v2">Iterations V2</a></h2>
-        <h5 class="mt-3 text-white">Custom Word Lists</h5>
-        <p class="mb-4">
-          Shortly after our app store launch, clients asked for a custom word list feature. This would enable guardians
-          to manually input words (like the student's name) for play, expanding beyond the provided lists.</p>
-        <div id="carouselCustomLevels" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/assets/img/bubbly-iv2-1.png" class="d-block w-100" alt="Iterations to Bubbly">
+        <section aria-labelledby="iterations-v2">
+          <h2 class="mt-5 text-primary">
+            <a id="iterations-v2" href="#iterations-v2" aria-hidden="true" tabindex="-1">Iterations V2</a>
+          </h2>
+          <h5 class="mt-3 text-white">Custom Word Lists</h5>
+          <p class="mb-4">
+            Shortly after our app store launch, clients asked for a custom word list feature. This would enable guardians
+            to manually input words (like the student's name) for play, expanding beyond the provided lists.</p>
+          <div id="carouselCustomLevels" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/assets/img/bubbly-iv2-1.png" class="d-block w-100" alt="Iterations to Bubbly">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/img/bubbly-iv2-2.png" class="d-block w-100" alt="Iterations to Bubbly">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/img/bubbly-iv2-3.png" class="d-block w-100" alt="Iterations to Bubbly">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/img/bubbly-iv2-4.png" class="d-block w-100" alt="Iterations to Bubbly">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/img/bubbly-iv2-5.png" class="d-block w-100" alt="Iterations to Bubbly">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/img/bubbly-iv2-6.png" class="d-block w-100" alt="Iterations to Bubbly">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="/assets/img/bubbly-iv2-2.png" class="d-block w-100" alt="Iterations to Bubbly">
-            </div>
-            <div class="carousel-item">
-              <img src="/assets/img/bubbly-iv2-3.png" class="d-block w-100" alt="Iterations to Bubbly">
-            </div>
-            <div class="carousel-item">
-              <img src="/assets/img/bubbly-iv2-4.png" class="d-block w-100" alt="Iterations to Bubbly">
-            </div>
-            <div class="carousel-item">
-              <img src="/assets/img/bubbly-iv2-5.png" class="d-block w-100" alt="Iterations to Bubbly">
-            </div>
-            <div class="carousel-item">
-              <img src="/assets/img/bubbly-iv2-6.png" class="d-block w-100" alt="Iterations to Bubbly">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCustomLevels"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCustomLevels"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCustomLevels"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselCustomLevels"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <h4 class="mt-5 text-white">Settings</h4>
-        <p class="mb-4">Additionally, we fine-tuned our settings by adding in additional round options and
-          customization, such as controlling when hints are shown.</p>
-        <div id="carouselSettings" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/assets/img/bubbly-iv2-7.png" class="d-block w-100" alt="Iterations to Bubbly">
+          <h4 class="mt-5 text-white">Settings</h4>
+          <p class="mb-4">Additionally, we fine-tuned our settings by adding in additional round options and
+            customization, such as controlling when hints are shown.</p>
+          <div id="carouselSettings" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/assets/img/bubbly-iv2-7.png" class="d-block w-100" alt="Iterations to Bubbly">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/img/bubbly-iv2-8.png" class="d-block w-100" alt="Iterations to Bubbly">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/img/bubbly-iv2-9.png" class="d-block w-100" alt="Iterations to Bubbly">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="/assets/img/bubbly-iv2-8.png" class="d-block w-100" alt="Iterations to Bubbly">
-            </div>
-            <div class="carousel-item">
-              <img src="/assets/img/bubbly-iv2-9.png" class="d-block w-100" alt="Iterations to Bubbly">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSettings" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSettings" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSettings" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselSettings" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+        </section>
 
         <!--High Fidelity Prototype V2-->
-        <h2 class="mt-5 text-primary"><a id="hi-fi-2">High Fidelity Prototype V2</a></h2>
-        <p class="mb-4">Our updated high-fidelity prototype enhances version 1 of Bubbly by including three primary user
-          flows: 1. Playing an existing Bubbly word list, 2. Creating a custom word list, and 3. Playing a custom word
-          list.</p>
-        <div class="ratio ratio-16x9">
-          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
-            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FoYMrBxIJjVVWpF568l4yJ0%2FPortfolio-Prototypes%3Fpage-id%3D1%253A2%26type%3Ddesign%26node-id%3D1-2067%26viewport%3D1378%252C1466%252C0.12%26t%3D9zEWV2uXz3dxjRwq-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2067%26show-proto-sidebar%3D1%26mode%3Ddesign"
-            aria-label="An embedded Figma prototype of the second high-fidelity prototype for Bubbly."
-            allowfullscreen></iframe>
-        </div>
+        <section aria-labelledby="hi-fi-2">
+          <h2 class="mt-5 text-primary">
+            <a id="hi-fi-2" href="#hi-fi-2" aria-hidden="true" tabindex="-1">High Fidelity Prototype V2</a>
+          </h2>
+          <p class="mb-4">Our updated high-fidelity prototype enhances version 1 of Bubbly by including three primary user
+            flows: 1. Playing an existing Bubbly word list, 2. Creating a custom word list, and 3. Playing a custom word
+            list.</p>
+          <div class="ratio ratio-16x9">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FoYMrBxIJjVVWpF568l4yJ0%2FPortfolio-Prototypes%3Fpage-id%3D1%253A2%26type%3Ddesign%26node-id%3D1-2067%26viewport%3D1378%252C1466%252C0.12%26t%3D9zEWV2uXz3dxjRwq-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2067%26show-proto-sidebar%3D1%26mode%3Ddesign"
+              aria-label="An embedded Figma prototype of the second high-fidelity prototype for Bubbly."
+              allowfullscreen></iframe>
+          </div>
+        </section>
 
         <!--Accessibility -->
-        <section aria-labelledby="accessibility-heading">
-          <h2 id="accessibility-heading" class="mt-5 text-primary"><a id="accessibility">Accessibility</a></h2>
+        <section aria-labelledby="accessibility">
+          <h2 class="mt-5 text-primary">
+            <a id="accessibility" href="#accessibility" aria-hidden="true" tabindex="-1">Accessibility</a>
+          </h2>
           <p class="mb-4">We followed best practices to ensure that our app was accessible for all users, some of which
             were:</p>
           <div class="row gy-3 d-flex flex-wrap">
@@ -832,8 +867,10 @@
         </section>
 
         <!--Design System -->
-        <section aria-labelledby="design-system-heading">
-          <h2 id="design-system-heading" class="mt-5 text-primary"><a id="design-system">Design System</a></h2>
+        <section aria-labelledby="design-system">
+          <h2 class="mt-5 text-primary">
+            <a id="design-system" href="#design-system" aria-hidden="true" tabindex="-1">Design System</a>
+          </h2>
           <p class="mb-4">
             As an iOS organization, we utilize Apple's Human Interface Guidelines for our design system and components.
           </p>
@@ -845,9 +882,11 @@
         </section>
 
         <!--Phase 4 -->
-        <section aria-labelledby="phase-4-heading">
+        <section aria-label="phase-4">
           <div class="text-bg-primary p-4 rounded">
-            <span class="badge text-bg-dark mb-2"><a id="4">Phase 4</a></span>
+            <span class="badge text-bg-dark mb-2">
+              <a id="4" href="#phase-4" aria-label="Skip to Phase 4 content">Phase 4</a>
+            </span>
             <h1 id="phase-4-heading" class="display-5 text-dark"><b>Going Forward</b></h1>
             <p class="text-dark"><i><b>Takeaways, next steps</b></i></p>
             <hr class="text-dark">
@@ -855,8 +894,10 @@
         </section>
 
         <!--Takeaways -->
-        <section aria-labelledby="takeaways-heading">
-          <h2 id="takeaways-heading" class="mt-5 text-primary"><a id="takeaways">Takeaways</a></h2>
+        <section aria-labelledby="takeaways">
+          <h2 class="mt-5 text-primary">
+            <a id="takeaways" href="#takeaways" aria-hidden="true" tabindex="-1">Takeaways</a>
+          </h2>
           <div class="row my-md-2 gx-5 gy-3">
             <div class="col-md-6 col-12">
               <div class="card" aria-labelledby="user-quotes-heading">
@@ -897,8 +938,10 @@
         </section>
 
         <!--Responses to Bubbly -->
-        <section aria-labelledby="bubbly-news-heading">
-          <h2 id="bubbly-news-heading" class="mt-5 text-primary"><a id="news">Bubbly in the News</a></h2>
+        <section aria-labelledby="news">
+          <h2 class="mt-5 text-primary">
+            <a id="news" href="#news" aria-hidden="true" tabindex="-1">Bubbly in the News</a>
+          </h2>
           <p>
             Since Bubbly's App Store launch, it has captured global attention from educational institutions, teachers,
             and parents of children with CVI.
@@ -934,8 +977,10 @@
         </section>
 
         <!--Next Steps -->
-        <section aria-labelledby="next-steps-heading">
-          <h2 id="next-steps-heading" class="mt-5 text-primary"><a id="next-steps">Next Steps</a></h2>
+        <section aria-labelledby="next-steps">
+          <h2 class="mt-5 text-primary">
+            <a id="next-steps" href="#next-steps" aria-hidden="true" tabindex="-1">Next Steps</a>
+          </h2>
           <figure>
             <img class="img-fluid" src="/assets/img/bubbly-next-steps.png"
               alt="Infographic showing next steps for Bubbly.">
@@ -943,9 +988,24 @@
               creation, and game statistics.</figcaption>
           </figure>
         </section>
+
       </div>
     </div>
   </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-body-tertiary text-center py-4">
+      <div class="container">
+        <nav aria-label="Footer Links">
+          <a href="https://www.linkedin.com/in/daniesco/" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i> LinkedIn
+          </a>
+        </nav>
+      </div>
+      <div>© 2024 Daniella Escobar | <a href="mailto:daniesco0303@gmail.com">daniesco0303@gmail.com</a></div>
+    </footer>
+    <!-- End Footer Section -->
+     
 </body>
 
 </html>
