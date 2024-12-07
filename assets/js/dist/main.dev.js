@@ -1,6 +1,6 @@
 "use strict";
 
-var _animeEs = _interopRequireDefault(require("/node_modules/animejs/lib/anime.es.js"));
+var _animeEs = _interopRequireDefault(require("../node_modules/animejs/lib/anime.es.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
